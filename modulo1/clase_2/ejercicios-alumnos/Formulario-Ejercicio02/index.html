@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Ejercicio 2</title>
 </head>
+
 <body>
-  
+  <header>
+    <h1>Logo</h1>
+    <nav id="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Quienes Somos</a>
+      <a href="#">Portafolio</a>
+      <a href="#">Blog</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <div id="banner">
+      <h2>Acá va un titulo</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse velit, adipisci error excepturi earum expedita? Accusantium
+        repellat similique quo tenetur, sequi repellendus tempora assumenda sint voluptas nisi repudiandae. Nulla, voluptates.</p>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <figure>
+        <img src="images/dogs.jpg" alt="perritos" width="500">
+      </figure>
+    </div>
+
+    <section id="formulario">
+      <h2>Mi Formulario</h2>
+      <form>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre">
+        </div>
+
+        <div>
+          <span>Como te enteraste de nosotros?</span>
+          <select>
+            <option value="internet">Internet</option>
+            <option value="television">Television</option>
+            <option value="radio">Radio</option>
+          </select>
+
+          <p>¿Nos visitarias de nuevo</p>
+          <label for="si">
+            <input type="checkbox" id="si">Si
+          </label>
+
+          <label for="no">
+            <input type="checkbox" id="no">No
+          </label>
+
+          <label for="quiza">
+            <input type="checkbox" id="quiza">Quiza
+          </label>
+
+          <p>Comentarios</p>
+          <textarea placeholder="escribe tu comentario"></textarea>
+          <p>
+            <input type="checkbox" checked> Inscribeme para recibir correos con novedades
+          </p>
+          <input type="submit" value="Envia tu cronica">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Esto es un footer. Todos los derechos reservados</p>
+  </footer>
 </body>
+
 </html>

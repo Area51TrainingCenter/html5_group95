@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Ejercicio 1: Formulario de Perfil</title>
+	<meta charset="UTF-8">
+	<title>Ejercicio 1: Formulario de Perfil</title>
 </head>
+
 <body>
-  <header>
-  	<h1>Mi sitio con formularios</h1>
-  	<ul>
-  		<li><a href="#">Inicio</a></li>
-  		<li><a href="#">Blog</a></li>
-  		<li><a href="#">Contacto</a></li>
-  	</ul>
-  </header>
-  <main>
-  	<div id="banner">
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  		<figure>
-  			<img src="images/gatito.jpg" width="200" 
-  			>
-  		</figure>
-  		<a href="#">Click Aqui</a>
-  	</div>
+	<header>
+		<h1>Mi sitio con formularios</h1>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</header>
+	<main>
+		<div id="banner">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<figure>
+				<img src="images/gatito.jpg" width="200">
+			</figure>
+			<a href="#">Click Aqui</a>
+		</div>
 
-  	<section id="perfil">
-  		<h2>Mi Perfil</h2>
-  		<p>Hola, edita aqui toda tu informacion</p>
-  		<form>
-  			<fieldset>
-  				<legend>Datos de tu cuenta</legend>
-  				<div>
-  					<label for="email">Email</label>
-  					<input type="email" id="email" placeholder="ejemplo@correo.com">
-  				</div>
+		<section id="perfil">
+			<h2>Mi Perfil</h2>
+			<p>Hola, edita aqui toda tu informacion</p>
+			<form>
+				<fieldset>
+					<legend>Datos de tu cuenta</legend>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="ejemplo@correo.com">
+					</div>
 
-  				<div>
-  					<label for="password">Contraseña Actual</label>
-  					<input type="password" id="password" placeholder="escribe tu contraseña">
-  				</div>
+					<div>
+						<label for="password">Contraseña Actual</label>
+						<input type="password" id="password" placeholder="escribe tu contraseña">
+					</div>
 
-  				<div>
-  					<label for="nombre">Nombre</label>
-  					<input type="text" id="nombre" placeholder="escribe tu nombre">
-  				</div>
-  			</fieldset>
+					<div>
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre" placeholder="escribe tu nombre">
+					</div>
 
-  			<fieldset>
-  				<legend>Configuracion de Privacidad</legend>
+					<div>
+						<label for="apellido">Apellido</label>
+						<input type="text" id="apellido" placeholder="escribe tu apellido">
+					</div>
+				</fieldset>
 
-  				<label for="password-actual">Contraseña Actual</label>
-          <input type="password" placeholder="escribe tu contraseña" id="password-actual">
+				<fieldset>
+					<legend>Configuracion de Privacidad</legend>
 
-          <label for="password-nueva">Contraseña Nueva</label>
-          <input type="password" placeholder="escribe tu contraseña" id="password-nueva">
+					<label for="password-actual">Contraseña Actual</label>
+					<input type="password" placeholder="escribe tu contraseña" id="password-actual">
 
-          <label for="password-confirmar">Contraseña Actual</label>
-          <input type="password" placeholder="escribe tu contraseña" id="password-confirmar">
-  			</fieldset>
-  		</form>
-  	</section>
-  </main>
-  <footer>
-  	<p>Esto es un footer. Todos los derechos reservados &copy;</p>
-  </footer>
+					<label for="password-nueva">Contraseña Nueva</label>
+					<input type="password" placeholder="escribe tu contraseña" id="password-nueva">
+
+					<label for="password-confirmar">Confirmar Contraseña</label>
+					<input type="password" placeholder="escribe tu contraseña" id="password-confirmar">
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Esto es un footer. Todos los derechos reservados &copy;</p>
+	</footer>
 </body>
+
 </html>
