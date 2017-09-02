@@ -5,9 +5,11 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<div id="encabezado">
-			<img src="images/logo.png">
-			<div id="menu">
+		<header id="encabezado">
+			<figure>
+				<img src="images/logo.png">
+			</figure>
+			<nav id="menu">
 				<a href="#">HOME</a>
 				<a href="#">HOME</a>
 				<a href="#">HOME</a>
@@ -15,9 +17,10 @@
 				<a href="#">HOME</a>
 				<a href="#">HOME</a>
 				<a href="#">HOME</a>
-			</div>
-		</div>
-		<div id="contenido">
+			</nav>
+		</header>
+
+		<main id="contenido">
 			<div id="banner-info">
 				<h3>Conver yourself with residential safety</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -37,11 +40,17 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<img src="images/nosotros-img.jpg">
+				<figure>
+					<img src="images/nosotros-img.jpg">
+					<figcaption>
+						<h2>Nosotros imagen</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					</figcaption>
+				</figure>
+				
 			</div>
-
-			<div id="servicios">
-				<div id="servicio1">
+			<section id="servicios">
+				<section id="servicio-1">
 					<img src="images/servicio-01.jpg">
 					<h3>Electrical Services Pricing Plans</h3>
 					<ul>
@@ -51,8 +60,8 @@
 						<li>Item 4</li>
 					</ul>
 					<a href="#">Servicio 01</a>
-				</div>
-				<div id="servicio2">
+				</section>
+				<section id="servicio2">
 					<img src="images/servicio-02.jpg">
 					<p><strong>Electronics</strong></p>
 					<h3>Dont forget theses electrical tips</h3>
@@ -63,8 +72,43 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<a href="#">Servicio02</a>
-				</div>
-			</div>
+				</section>
+			</section>
+
+			<section id="blog">
+				<article id="post1">
+					<h3>Titulo de post</h3>
+					<img src="images/post-thumb-01.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<a href="#">Leer Mas</a>
+					<button>Clickeame</button>
+				</article>
+
+				<article id="post2">
+					<h3>Titulo de post</h3>
+					<img src="images/post-thumb-01.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<a href="#">Leer Mas</a>
+				</article>
+
+				<article id="post3">
+					<h3>Titulo de post</h3>
+					<img src="images/post-thumb-01.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<a href="#">Leer Mas</a>
+				</article>
+
+				<article id="post4">
+					<h3>Titulo de post</h3>
+					<img src="images/post-thumb-01.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<a href="#">Leer Mas</a>
+				</article>
+			</section>
+
+			<aside>
+				<h1>Aqui va el contenido considerado secundario</h1>
+			</aside>
 
 			<div id="productos">
 				<div id="producto1">
@@ -85,9 +129,9 @@
 					<p>$45.99 <del>$50.99</del></p>
 				</div>
 			</div>
-		</div>
+		</main>
 
-		<div id="footer">
+		<footer id="footer">
 			<img src="images/logo.png">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -96,6 +140,11 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Esto es un footer. Todos los derechos reservados &copy;</p>
-		</div>
+			<address>
+				<p>Telefono: <strong>123-123-123</strong></p>
+				<p>Email: <strong>raymi15@gmail.com</strong></p>
+				<p>Direccion: <strong>aqui va la direccion</strong></p>
+			</address>
+		</footer>
 	</body>
 </html>

@@ -1,0 +1,33 @@
+/* 
+	Colores
+		Valores Predeterminados
+		RGB
+		HEXADECIMAL
+
+*/
+
+/*
+	#titulo {
+		color:red;
+		background-color: yellow;
+	}
+*/
+
+.otro-titulo {
+	color: purple;
+	background-color: blue;
+}
+
+h3 {
+	background-color: green;
+}
+
+#parrafo1 {
+	color: rgb(120, 50, 40);
+	background-color: rgb(50, 60, 0);
+}
+
+#parrafo2 {
+	color: #000000;
+	color: #ffffff;
+}

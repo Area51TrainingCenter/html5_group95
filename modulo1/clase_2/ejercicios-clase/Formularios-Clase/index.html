@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<h2>Formulario Login</h2>
+
+	<form>
+		<div>
+			<label for="usuario">Usuario</label>
+			<input type="text" id="usuario" placeholder="Escribe tu usuario" required>
+		</div>
+
+		<div>
+			<label for="password">Contaseña</label>
+			<input type="password" id="password" required>
+		</div>
+
+		<input type="submit" value="Bang!">
+	</form>
+
+	<h2>Formulario de comentario</h2>
+	<form>
+		<p>Escribe tu comentario</p>
+		<textarea placeholder="Escribe un comentario"></textarea>
+	</form>
+
+	<h2>Formulario de Registro / Perfil</h2>
+	<form>
+		<div>
+			<label for="nombre">Nombre</label>
+			<input type="text" placeholder="escribe tu nombre" id="nombre">
+		</div>
+
+		<div>
+			<label for="email">Email</label>
+			<input type="email" placeholder="escribe tu email">
+		</div>
+
+		<div>
+			<label for="telefono">Telefono</label>
+			<input type="number" placeholder="escribe tu telefono" id="telefono">
+		</div>
+
+		<div>
+			<label for="date">Date</label>
+			<input type="date" id="date">
+		</div>
+
+		<div>
+			<label for="file">Sube tus archivos</label>
+			<input type="file">
+		</div>
+
+		<div>
+			<p>Escribe tus comentario</p>
+			<textarea rows="10" cols="40"></textarea>
+		</div>
+	</form>
+
+	<h2>Formulario 4</h2>
+	<form>
+		<div>
+			<label for="intereses">Intereses</label>
+			<p><input type="checkbox" checked> Videojuegos</p>
+			<p><input type="checkbox"> Musica</p>
+			<p><input type="checkbox"> Peliculas</p>
+		</div>
+
+		<div>
+			<label for="intereses">Intereses</label>
+			<p><input type="radio" checked> Videojuegos</p>
+			<p><input type="radio"> Musica</p>
+			<p><input type="radio"> Peliculas</p>
+		</div>
+
+		<div>
+			<p>Selecciona la consola que mas te guste</p>
+			<select>
+				<option value="ps4">PS4</option>
+				<option value="ps3">PS3</option>
+				<option value="wii" selected>Wii</option>
+				<option value="xbox360">X-Box 360</option>
+			</select>
+		</div>
+
+		<div>
+			<input type="submit">
+			<button>Boton</button>
+
+			<input type="image" src="images/button-img">
+		</div>
+
+		<div>
+			<label for="nombre">Nombre</label>
+			<input type="nombre" name="nombre" id="nombre">
+			<input type="reset">
+		</div>
+	</form>
+</body>
