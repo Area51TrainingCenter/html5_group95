@@ -1,0 +1,46 @@
+/* 
+	CSS: Conjuntos de reglas
+
+	selector {
+		propiedad: valor;
+	}
+
+	Selectores
+
+		Tipo
+		ID
+		Class
+
+	Color
+		propiedad: color
+		propiedad: background-color;
+	Valores de Color: 
+		Predeterminados
+		RGB
+		Hexadecimales
+	Opacidad
+		propiedad: opacity
+*/
+
+h1 {
+	background-color: red;
+	color: rgb(40, 120, 30);
+	color: #ededed;
+}
+
+.link {
+	background-color: rgba(40, 30, 200, 0.5);
+	color: white;
+}
+
+p {
+	background-color: purple;
+	color: white;
+	opacity: 0.5;
+}
+
+#titulo {
+	color: purple;
+}
+
+

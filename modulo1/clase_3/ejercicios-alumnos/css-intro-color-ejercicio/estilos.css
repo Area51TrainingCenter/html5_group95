@@ -1,0 +1,33 @@
+/* 
+	Paleta de Colores
+	
+	verde: #00a2a5
+	rojo: #c54d57;
+	body: #556370;
+	amarillo: c7f465;
+
+*/	
+
+body {
+	background-color: #556370;
+}
+
+header {
+	background-color: #00a2a5;
+}
+
+.link {
+	color: white;
+}
+
+#formulario1 {
+	background-color: #c54d57;
+}
+
+.input {
+	background-color: #00a2a5;
+}
+
+#submit {
+	background-color: #c7f465;
+}

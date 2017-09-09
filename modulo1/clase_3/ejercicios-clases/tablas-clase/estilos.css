@@ -1,0 +1,21 @@
+td {
+	background: red;
+	color: white;
+}
+
+th {
+	background: green;
+	color: white;
+}
+
+.tabla1 {
+	empty-cells: hide;
+}
+
+.tabla2 {
+	border-collapse: collapse;
+}
+
+.tabla3 {
+	border-spacing: 5px 15px;
+}

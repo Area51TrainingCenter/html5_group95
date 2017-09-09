@@ -1,0 +1,108 @@
+/* 
+	Propiedades 
+
+		1. Fuentes
+				SVG
+				TTF
+				EOT
+				WOFF
+		2. Texto
+			Unidades de Medida
+				Pixeles -> Fija
+				Porcentajes 
+				Ems
+
+*/
+
+/* Fuentes */
+
+@font-face {
+	font-family:'Raymi'; 
+	src: url('fonts/bebas-1.ttf'),
+			 url('fonts/bebas.svg'),
+			 url('fonts/bebas.eot'),
+			 url('fonts/bebas.woff')
+}
+
+body {
+	font-family: 'Roboto';
+	font-size: 16px; /* 1em */
+}
+
+#titulo {
+	font-family: 'Raymi', sans-serif;
+}
+
+.titulo1 {
+	font-family: 'Indie Flower', 'Verdana';
+}
+
+.titulo2 {
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.fa-times {
+	font-size: 4em;
+	color: purple;
+}
+
+/* Propiedades de Texto */
+
+#parrafo1 {
+	text-transform: uppercase;
+	text-transform: lowercase;
+	text-transform: capitalize;
+}
+
+#parrafo2 {
+	text-decoration: underline;
+	text-decoration: none;
+	text-decoration: overline;
+	text-decoration: line-through;
+}
+
+#parrafo3 {
+	text-align: left;
+	text-align: center;
+	text-align: right;
+	text-align: justify;
+
+	text-indent: 50px;
+}
+
+#parrafo4 {
+	line-height: 120px; 
+}
+
+#parrafo5 {
+	word-spacing: 25px;
+	letter-spacing: 25px;
+}
+
+#gatito {
+	vertical-align: top;
+	vertical-align: bottom;
+	vertical-align: middle;
+	vertical-align: super;
+	vertical-align: sub;
+}
+
+#parrafo6 {
+	font-size: 3em;
+	color: black;
+	text-shadow: -5px 10px 2px #f701ff;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+}
+
+p {
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 1px 3px #000;
+}
+
+#banner {
+	background-image: url('paisaje.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 60px 30px;
+
+	background:#000 url('paisaje.jpg') no-repeat center;
+	height: 700px;
+}
