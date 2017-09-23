@@ -50,12 +50,37 @@ section {
   background: #5748ca;
   border-color: #5748ca;
   text-align: center;
+  outline: none;
 }
 
 .botones button {
   background: #ffa00b;
   border-color:#ffa00b;
+  outline: none;
 }
+
+.botones button:hover {
+  cursor: pointer;
+}
+
+.botones a:hover,
+.botones button:hover {
+  background: transparent;
+  color: black;
+}
+
+.botones a:active,
+.botones button:active {
+  background: red;
+  color: black;
+  outline: none;
+}
+
+.botones a:visited,
+.botones button:visited {
+  outline: none;
+}
+
 
 /* Cajas */
 
@@ -64,6 +89,10 @@ section {
   height: 300px;
   background: #11da61;
   margin: 30px auto;
+}
+
+.caja:hover {
+  background: purple;
 }
 
 /* Formularios */
@@ -85,6 +114,15 @@ form input {
   border-radius: 5px;
 }
 
+form input:focus {
+  border: none;
+  color: green;
+}
+
+form input:focus::-webkit-input-placeholder {
+  color: maroon;
+};
+
 form label {
   font-size: 1.5em;
 }
@@ -93,3 +131,23 @@ label, input {
   display: block;
   margin: 15px 0;
 }
+
+/* Selectores para placeholder */
+
+::-webkit-input-placeholder {
+  color: pink;
+};
+
+::-moz-input-placeholder {
+  color: pink;
+};
+
+::-ms-input-placeholder {
+  color: pink;
+};
+
+::-o-input-placeholder {
+  color: pink;
+};
+
+
