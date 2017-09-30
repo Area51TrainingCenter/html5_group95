@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	background:black;
+	color: white;
+	font-family: "Roboto", sans-serif;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+header h1 {
+	font-size: 6em;
+}
+
+
+
+
+.banner {
+	background: url("images/polina.gif");
+	background-size: cover;
+	padding: 200px 0;
+}
+
+.banner-desc {
+	width: 50%;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.5);
+	padding:60px 40px;
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	font-size: 1.5em;
+}

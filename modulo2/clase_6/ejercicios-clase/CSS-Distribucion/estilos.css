@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  font-size: 16px;
+  background: #66552D;
+  color: white;
+}
+
+header {
+  padding: 40px 0;
+  background: #66552D;
+  background: #B2A482;
+  text-align: center;
+}
+
+.ejemplo1 {
+  margin: 40px 0;
+}
+
+figure img {
+  
+}
+
+figcaption {
+  font-size: 2.5em;
+}
+
+.cajas {
+  width: 400px;
+  height: 400px;
+  background: #555C6A;
+  margin: 20px 0 20px 30px;
+}

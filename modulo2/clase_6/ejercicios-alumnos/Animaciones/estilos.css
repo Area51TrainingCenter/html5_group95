@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #066600;
+  padding: 40px 0;
+}
+
+img { 
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+main {
+  background: #66003B;
+}
+
+.animaciones {
+  padding: 50px 0;
+}
+
+figure {
+  width: 31%;
+  margin: 0 2% 30px 0;
+  display: inline-block;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6)
+}
+
+figcaption p {
+  background: #5a21ba;
+  font-size: 2em;
+}
