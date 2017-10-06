@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*
+  background: url('docs/ejercicio.png') no-repeat top center;
+  opacity: 0.5;
+  */
+  background-color: black;
+  color: white
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin: 40px 0;
+  background: purple;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  line-height: 108px;
+}
+
+header nav {
+  float: right;
+  background-color: green;
+  height: 108px;
+}
+
+header nav > a {
+  line-height: 108px;
+}
+
+header a {
+  color: white;
+}
