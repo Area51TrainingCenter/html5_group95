@@ -1,4 +1,4 @@
-  /* 
+/* 
   Eventos en JavaScript 
 
   Nos demos cuenta o no, cada vez que el usuario interactúa con el sitio web se generan diferentes tipos de eventos.
@@ -10,7 +10,7 @@
   Algunos eventos con los que vamos a trabajar ahora son: 
 
   Eventos relacionados con el uso del muouse o trackpad
- 
+
   click
   dblclick
   mousedown
@@ -19,7 +19,7 @@
   mouseover
   mouseout
 
-  en smartphones y tables existen los siguientes eventos
+  en smartphones y tablet existen los siguientes eventos
 
   touchstart
   touchmove
@@ -57,75 +57,68 @@ var listItems = document.querySelectorAll('li');
 var scrolling = document.querySelector('.scroll');
 var usuario = document.getElementById('usuario');
 var pass = document.getElementById('pass');
-//var ul = document.getElementsByTagName('ul')[0]
+var ul = document.getElementsByTagName('ul')[0]
 
-console.log('Window inner height', window.innerHeight);
+// Eventos de Mouse
 
-removeItemButton.addEventListener('click', function(){
-	console.log(window.scroll(0, 100));
-});
+console.log(descriptionButton);
 
-// Eventos de mouse
-
-function toggleContent() {
-	if(listDiv.style.display == "none"){
-		toggleList.innerHTML = "Hide List";
-		listDiv.style.display = "block";
-	} else {
-		toggleList.innerHTML = "Show List";
-		listDiv.style.display = "none";
-	}
+function nuevoClick(evento){
+  evento.preventDefault();
+  console.log(evento);
+  console.log("ME ESTAN CLICKEANDOOOOOO");
 }
 
-/*
-function buttonLeave() {
-	console.log("ME ESTAN CLICKEANDO");
-}
-*/
+descriptionButton.addEventListener("click", nuevoClick);
 
-// Funciones de callback
+// addItemInput, addItemButton
 
-toggleList.addEventListener("click", toggleContent);
-
-/*
-toggleList.addEventListener("click", function(){
-	console.log("ME ESTAN CLICKEANDO");
-});
-*/
-
-function agregandoElementos() {
-	if(addItemInput.value){
-		var ul = document.querySelector('ul');
-		var li = document.createElement("li");
-		li.textContent = addItemInput.value;
-		ul.appendChild(li);
-		addItemInput.value = "";
-	}else {
-		alert("tienes que escribir algo");
-	}
+function agregarElementos(e){
+  evento.preventDefault();
+  if(addItemInput.value){
+    var ul = document.querySelector("ul");
+    var li = document.createElement("li");
+    li.innerHTML = addItemInput.value;
+    ul.appendChild(li);
+    addItemInput.value = "";
+  }else {
+    alert("TIENES QUE ESCRIBIR ALGO, CSM");
+  }
 }
 
-addItemButton.addEventListener("click", agregandoElementos)
+addItemButton.addEventListener("click", agregarElementos);
 
-function cambioDeColor(evento){
-	console.log(evento);
-	var heading = document.querySelector("#myHeading");
-	heading.style.fontSize = "150px";
+function cambioColor(e){
+  var heading = document.querySelector("#myHeading");
+  heading.style.color = "red";
 }
 
-descriptionP.addEventListener("dblclick", cambioDeColor)
-
-// Eventos del teclado
-
-function presionandoTeclado(evento){
-	//console.log(evento.keyCode);
-	if(evento.keyCode == 13){
-		var ul = document.querySelector('ul');
-		var li = document.createElement("li");
-		li.textContent = addItemInput.value;
-		ul.appendChild(li);
-		addItemInput.value = "";
-	}
+function cambioColor2(e){
+  var heading = document.querySelector("#myHeading");
+  heading.style.color = "blue";
 }
 
-addItemInput.addEventListener("keypress", presionandoTeclado)
+descriptionP.addEventListener("dblclick", cambioColor2);
+
+// Eventos de Teclado: keypress, keydown, keyup
+
+function mostrandoElTeclado(evento){
+  if(addItemInput.value){
+    if(evento.keyCode === 13){
+      var ul = document.querySelector("ul");
+      var li = document.createElement("li");
+      li.innerHTML = addItemInput.value;
+      ul.appendChild(li);
+      addItemInput.value = "";
+    }
+  }else {
+    alert("TIENES QUE ESCRIBIR ALGO, CSM");
+  }
+}
+
+//addItemInput.addEventListener("keypress", mostrandoElTeclado);
+addItemInput.addEventListener("keydown", function(e){
+  console.log(e.keyCode);
+})
+
+
