@@ -1,4 +1,4 @@
-/* 
+  /* 
   Eventos en JavaScript 
 
   Nos demos cuenta o no, cada vez que el usuario interactúa con el sitio web se generan diferentes tipos de eventos.
@@ -10,7 +10,7 @@
   Algunos eventos con los que vamos a trabajar ahora son: 
 
   Eventos relacionados con el uso del muouse o trackpad
-
+ 
   click
   dblclick
   mousedown
@@ -59,6 +59,11 @@ var usuario = document.getElementById('usuario');
 var pass = document.getElementById('pass');
 //var ul = document.getElementsByTagName('ul')[0]
 
+console.log('Window inner height', window.innerHeight);
+
+removeItemButton.addEventListener('click', function(){
+	console.log(window.scroll(0, 100));
+});
 
 // Eventos de mouse
 

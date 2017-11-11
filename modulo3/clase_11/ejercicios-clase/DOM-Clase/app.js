@@ -15,7 +15,7 @@ var lista = document.getElementsByTagName("li")
 var toggleList = document.querySelector("#toggleList");
 document.querySelector("input[type='text']");
 document.querySelector("li:first-child");
-document.querySelectorAll("li");
+document.querySelectorAll("li"); 
 
 //var arrLista = Array.from(lista);
 
@@ -35,7 +35,7 @@ p.textContent = input;
 // Manipulacion atributos de los elementos seleccionados
 
 var input2 = document.querySelector(".addItemInput");
-
+ 
 console.log(input2.type);
 console.log(input2.className);
 
